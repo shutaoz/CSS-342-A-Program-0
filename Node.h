@@ -13,7 +13,7 @@ public:
 
     Node(int playerNum);
 
-}
+};
 
 
 #endif //CSS_342_A_PROGRAM_0_NODE_H

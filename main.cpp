@@ -12,12 +12,12 @@ int main(){
 
     cout<< "What is the # of participants (n)" << endl;
     cin>> uN;
-    count<< "What is the value of k" << endl;
+    cout<< "What is the value of k" << endl;
     cin>> uK;
 
 
     //driver program to test Program0 class
-    Program0 tester = new Program0(uN, uK);
+    Program0 tester(uN, uK);
     cout<< tester.theChosenOne() << endl;
 
 

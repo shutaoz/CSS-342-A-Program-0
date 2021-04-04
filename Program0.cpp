@@ -13,7 +13,7 @@
 Program0::Program0(int uN, int uK) {
     n = uN;
     k = uK;
-    CLL cList = new CLL();
+
 
     //create a circular LL that has uN nodes
     for(int i = 0; i < uN; ++i){
@@ -33,7 +33,7 @@ int Program0::theChosenOne() {
             temp = temp->next;
             ++j;
         }
-        deleteNode(temp);
+        cList.deleteNode(temp);
     }
     return temp->player;
 

@@ -6,7 +6,7 @@
 #include "Node.h"
 #include "stdlib.h"
 
-CLL::add(int playerNum){
+void CLL::add(int playerNum){
     //case 1 the list is empty
     if(!rear) {
         rear = new Node(playerNum);
@@ -26,7 +26,7 @@ CLL::add(int playerNum){
 
 }
 
-CLL::deleteNode(Node* dNode) {
+void CLL::deleteNode(Node* dNode) {
     Node* temp = dNode->next;
     dNode->next = dNode->next->next;
     free(temp);

@@ -3,8 +3,9 @@
 //
 
 #include "Node.h"
+#include "stdio.h"
 
 Node::Node(int playerNum){
     player = playerNum;
-    next = null;
+    next = NULL;
 }

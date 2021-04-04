@@ -15,6 +15,7 @@ class Program0{
 public:
     int n;
     int k;
+    CLL cList;
     //constructor
     Program0(int uN, int uK);
     int theChosenOne(); //return the result after calculating which node survives the game

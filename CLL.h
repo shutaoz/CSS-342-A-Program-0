@@ -5,6 +5,8 @@
 #ifndef CSS_342_A_PROGRAM_0_CLL_H
 #define CSS_342_A_PROGRAM_0_CLL_H
 
+#include "cstdio"
+#include "Node.h"
 
 class CLL {
 public:
@@ -15,7 +17,7 @@ public:
     void add(int playerNum);
 
     //delete a node from the existing list
-    void deleteNode();
+    void deleteNode(Node* uNode);
 
     CLL() {
         rear = NULL;
