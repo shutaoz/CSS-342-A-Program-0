@@ -24,9 +24,10 @@ Program0::Program0(int uN, int uK) {
 
 
 int Program0::theChosenOne() {
-    int counter = n - 1;
+    //int counter = n - 1;
     Node* temp = cList.rear;
-
+    Node* current = cList.rear;
+    /*
     for(int i = 0; i < counter; ++i){
         int j = 0;
         while(j != k){
@@ -35,6 +36,18 @@ int Program0::theChosenOne() {
         }
         cList.deleteNode(temp);
     }
+     */
+    while (temp->next != temp){
+        current = temp->next;
+        for(int i = 0; i < k; ++i)
+            temp = temp->next;
+
+        cList.deleteNode(temp);
+        temp = current;
+
+
+    }
+
     return temp->player;
 
 }

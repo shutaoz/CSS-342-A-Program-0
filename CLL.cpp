@@ -26,9 +26,15 @@ void CLL::add(int playerNum){
 
 }
 
+//delete the current node
 void CLL::deleteNode(Node* dNode) {
-    Node* temp = dNode->next;
-    dNode->next = dNode->next->next;
+    Node* temp = dNode;
+    Node* current = dNode;
+    while(current->next != temp)
+        current = current->next;
+    current->next = current->next->next;
+    if(rear == dNode)
+        rear = dNode->next;
     free(temp);
 
 }
