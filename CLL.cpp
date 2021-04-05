@@ -4,7 +4,7 @@
 
 #include "CLL.h"
 #include "Node.h"
-#include "stdlib.h"
+#include "cstdlib"
 
 void CLL::add(int playerNum){
     //case 1 the list is empty
@@ -37,4 +37,11 @@ void CLL::deleteNode(Node* dNode) {
         rear = dNode->next;
     free(temp);
 
+}
+
+//delete the node next to the node passed in
+void CLL::deleteNextNode(Node *dNode) {
+    Node* temp = dNode->next;
+    dNode->next = dNode->next->next;
+    free(temp);
 }

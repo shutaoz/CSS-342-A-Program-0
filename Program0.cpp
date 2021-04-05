@@ -6,7 +6,7 @@
 #include "Program0.h"
 #include "Node.h"
 #include "CLL.h"
-#include "stdlib.h"
+#include "cstdlib"
 
 
 //constructor
@@ -24,7 +24,7 @@ Program0::Program0(int uN, int uK) {
 
 
 int Program0::theChosenOne() {
-    //int counter = n - 1;
+    int counter = n - 1;
     Node* temp = cList.rear;
     Node* current = cList.rear;
     /*
@@ -34,19 +34,45 @@ int Program0::theChosenOne() {
             temp = temp->next;
             ++j;
         }
-        cList.deleteNode(temp);
+        cList.deleteNextNode(temp);
     }
      */
-    while (temp->next != temp){
-        current = temp->next;
-        for(int i = 0; i < k; ++i)
-            temp = temp->next;
+    if (k == 0) {
+        while (temp->next != temp) {
+            current = temp->next;
+            for (int i = 0; i < k; ++i)
+                temp = temp->next;
 
-        cList.deleteNode(temp);
-        temp = current;
+            cList.deleteNode(temp);
+            temp = current;
 
 
+        }
     }
+    else {
+        /*
+        for(int i = 0; i < counter; ++i){
+            int j = 0;
+            while(j != k){
+                temp = temp->next;
+                ++j;
+            }
+            cList.deleteNextNode(temp);
+        }
+         */
+        while (temp->next != temp) {
+
+            for (int i = 0; i < k; ++i)
+                temp = temp->next;
+
+            current = temp->next;
+            cList.deleteNode(temp);
+            temp = current;
+
+
+        }
+    }
+
 
     return temp->player;
 

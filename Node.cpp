@@ -3,7 +3,7 @@
 //
 
 #include "Node.h"
-#include "stdio.h"
+#include "cstdlib"
 
 Node::Node(int playerNum){
     player = playerNum;
