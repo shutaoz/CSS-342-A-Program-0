@@ -37,19 +37,8 @@ int Program0::theChosenOne() {
         cList.deleteNextNode(temp);
     }
      */
-    if (k == 0) {
-        while (temp->next != temp) {
-            current = temp->next;
-            for (int i = 0; i < k; ++i)
-                temp = temp->next;
-
-            cList.deleteNode(temp);
-            temp = current;
 
 
-        }
-    }
-    else {
         /*
         for(int i = 0; i < counter; ++i){
             int j = 0;
@@ -71,7 +60,7 @@ int Program0::theChosenOne() {
 
 
         }
-    }
+
 
 
     return temp->player;
