@@ -1,6 +1,7 @@
-//
+// CLL.h
 // Created by Shutao Zhang on 4/4/21.
-//
+// 1978017
+// class declaration file for the CLL class
 
 #ifndef CSS_342_A_PROGRAM_0_CLL_H
 #define CSS_342_A_PROGRAM_0_CLL_H

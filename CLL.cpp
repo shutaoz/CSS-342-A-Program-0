@@ -1,6 +1,9 @@
-//
+// CLL.cpp
 // Created by Shutao Zhang on 4/4/21.
-//
+// 1978017
+// class implementation file for the CLL class
+// CLL stands for circular linked list, it's the data structure that manages a list of nodes that represent participants of
+// the game
 
 #include "CLL.h"
 #include "Node.h"

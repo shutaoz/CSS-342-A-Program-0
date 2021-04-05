@@ -1,6 +1,8 @@
-//
+// Program0.cpp
 // Created by Shutao Zhang on 4/3/21.
-//
+// 1978017
+// this file has the implementations for Program0.h. Program0 keeps track of
+// a CLL and two ints
 
 #include "iostream"
 #include "Program0.h"

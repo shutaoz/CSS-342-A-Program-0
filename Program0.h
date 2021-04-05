@@ -1,6 +1,7 @@
-//
+// Program0.h
 // Created by Shutao Zhang on 4/3/21.
-//
+// 1978017
+// class declaration file for the Program0 class
 
 #ifndef CSS_342_A_PROGRAM_0_PROGRAM0_H
 #define CSS_342_A_PROGRAM_0_PROGRAM0_H
